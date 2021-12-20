@@ -1,5 +1,5 @@
 import React from "react";
-import moment from "moment";
+
 import Chart from "../Chart/Chart";
 
 const ExpensesChart = (props) => {
@@ -40,9 +40,9 @@ const ExpensesChart = (props) => {
 
      const expenseMonth = date_string_slice; // starting at 0 => January => 0
    //const expenseMonth = expense.date.toString().replace('-','/');
-    var months = [];
-   months.push(moment().month(expenseMonth).format("MMM"));
-   console.log(months); 
+  //   var months = [];
+  //  months.push(moment().month(expenseMonth).format("MMM"));
+  //  console.log(months); 
    
      chartDataPoints[expenseMonth].value += expense.amount;
     // chartDataPoints[months[expenseMonth]].value += expense.amount;
